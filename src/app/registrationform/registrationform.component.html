@@ -9,14 +9,18 @@
 
       <label for="password">Password</label>
       <div class="input-wrapper">
-        <input type="password" id="password" />
-        <span class="eye-icon">👁️</span>
+        <input [type]="showPassword ? 'text' :'password' " id="password" placeholder="Enter Password.." [(ngModel)]="showPassword"/>
+        <span class="eye-icon" (click)="ShowPassword()">
+          {{ showPassword ? '👁️' : '👁️‍🗨️' }}
+        </span>
       </div>
 
       <label for="repeat-password">Repeat Password</label>
       <div class="input-wrapper">
-        <input type="password" id="repeat-password" />
-        <span class="eye-icon">👁️</span>
+        <input [type]="showRepeatPassword ? 'text' :'password' " id="repeat-password" [(ngModel)]="showRepeatPassword" />
+        <span class="eye-icon" (click)="ShowRepeatPassword()">
+          {{ showRepeatPassword ? '👁️' : '👁️‍🗨️' }}
+        </span>
       </div>
 
       <button type="submit" class="register-btn">Register</button>

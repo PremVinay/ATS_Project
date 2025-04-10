@@ -26,7 +26,8 @@
   }
   
   input[type="email"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="text"] {
     width: 100%;
     padding: 10px;
     background-color: #e7dfd2;
@@ -38,7 +39,14 @@
   .input-wrapper {
     position: relative;
   }
-  
+  .input-wrapper > input{
+    width: 100%;
+    padding: 10px;
+    background-color: #e7dfd2;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+  }
   .eye-icon {
     position: absolute;
     right: 10px;
