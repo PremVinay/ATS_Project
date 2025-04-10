@@ -5,6 +5,8 @@
     justify-content: space-around;
     align-items: center;
     margin: auto 0;
+   
+    padding:1rem;
 }
 .navbar{
     width: 100vw;
@@ -25,4 +27,9 @@
 .logo a{
     text-decoration: none;
     color: black;
+}
+
+.logo a img{
+    width: 80px;
+    mix-blend-mode: multiply;
 }
